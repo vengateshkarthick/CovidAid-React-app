@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+ 
+*{
+    font-family: sans-serif,serif,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+:root{
+    --about:#f7465d;
+    --primary-color:#6773ff;
+    --logo-color:#f0475e;
+    --placeholder-color:#d1bfbf;
+    --bg-color:whitesmoke;
+    --bg-color-g:gainsboro;
+    --bg-color-n:#ffff;
+    --border-mnu:#f5f5f5;
+    --success-color:#4caf50;
+    --new-color:#008cba;
+    --checkout-btn:#555555;
+    --regular:black;
+    --border-color: rgb(74, 168, 206);
+
+}
+.pt{
+    width: 90%;
+    margin: auto;
+}
+.weak{
+    display: block;
+    color:var(--about);
+    font-family: "Poppins" ,sans-serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    margin: 2px;
+    
+}
+.strong{
+    display: block;
+    color:var(--success-color);
+    font-size: 15.5px;
+    font-weight: bold;
+    font-family: "Poppins" ,sans-serif;
+     margin: 2px;
+}
+.powerful{
+    display: block;
+    color:var(--success-color);
+    font-weight: bold;
+    font-size: 15.5px;
+    font-family: "Poppins" ,sans-serif;
+    margin: 2px;
+
+}
+.heading{
+    font-family: "Josefin Sans",sans-serif;
+    color:var(--success-color);
+}
+img{
+    height: auto;
+    width:10%;
+}
+.container{
+    width: 500px;
+    border:2px solid var(--border-mnu);
+    box-shadow:2px 2px 2px 2px var(--bg-color);
+    padding: 8px;
+    border-radius: 18px;
+    
+}
+.usr-slc-no{
+    user-select: none;
+}
+
+.btn-border{
+    border:1px solid transparent;
+    
+}
+.font-pop{
+    font-family: "Poppins",sans-serif;
+    color:var(--bg-color-n);
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.btn-danger{
+    background-color: var(--about);
+}
+
+.btn-danger:focus,
+.btn-danger:hover{
+    background-color: var(--about);
+}
+
+.btn-color-1{
+    background-color: var(--success-color);
+}
+.btn-color-1:focus,
+.btn-color-1:hover{
+    background-color: var(--success-color);
+}
+
+.btn-color-2{
+    --primary-color:turquoise;
+    background-color: var(--primary-color);
+}
+
+.btn-color-2:focus,
+.btn-color-2:hover{
+    background-color: var(--primary-color);
+}
+
+.btn-color-3{
+    background-color: var(--checkout-btn);
+}
+
+
+.btn-color-3:focus,
+.btn-color-3:hover{
+    background-color: var(--checkout-btn);
+}
+.flex{
+    display: flex;
+}
+.flex-b{
+    flex-basis: 80%;
+}
+.flex-wg{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.flex-j-sa{
+    justify-content: space-around;
+}
+.flex-j-sb{
+    justify-content: space-between;
+}
+.flex-j-c{
+    justify-content: center;
+}
+.flex-j-se{
+    justify-content: space-evenly;
+}
+.flex-nw{
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+
+ .header{
+     margin-top:7%;
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .signIn{
+     width: fit-content;
+     flex-wrap: wrap;
+     height:fit-content;
+     margin:auto;
+     padding:10px 4px;
+     border:2px solid whitesmoke;
+     box-sizing: border-box;
+     box-shadow: 2px 2px 2px 2px whitesmoke ;
+     border-radius: 14px;
+ }
+ 
+form{
+    padding:6px;
+    margin:8px 8px;
+}
+#signIn{
+    bottom:10px;
+    flex:0 1 1;
+    max-width:400px;
+    
+  }
+#signInImg{
+        height:auto;
+        width:200px;
+  }
+
+  @media screen and (max-width:700px){
+    #signIn{
+
+        justify-content: center;
+    }
+    #signInImg{
+        height:200px;
+        width:200px ;
+
+    }
+}
+
+  
+  #signUpImg{
+    height:340px;
+    margin:6px 4px;
+} 
+ 
+label{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin:4px;
+    color:black!important;
+}
+.inp{
+    display: inline-block;
+    padding:8px;
+    
+    font-size: 1rem;
+    color:black;
+    background-color: white;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom:1px solid black;
+    outline:none;
+
+}
+ .signIn input:focus,.signIn input:focus-within
+    {
+    border-bottom: 2px solid black;
+    }
+
+
+
+#signInBtn{
+    background-color:#ff4b63;
+     border:2px solid white;
+    font-size: 1rem;
+    font-weight:bold;
+    margin:5px;
+    cursor: pointer;
+    color:white;
+    padding:10px 20px;
+    border-radius: 10px;
+
+}
+#signInBtn:focus{
+    background-color: white;
+    color:#ff4b63;
+    border:2px solid #ff4b63;
+}
+#goBack{
+    display:inline-block;
+    background-color:whitesmoke;
+    border:1px solid white;
+    border-radius:16px;
+    font-size: 16px;
+    padding:6px 10px;
+    color:black;
+    outline:none;
+    cursor:pointer;
+}
+.topic{
+    color:black;
+}
+
+@media only screen and (max-width:800px){
+    .font-pop{
+        font-size: 10px;
+    }
+    .brd{
+        border-radius:5px;
+    }
+    .heading{
+        font-size: 1rem;
+        font-weight: 900;
+    }
+   
+    .trans-l-20{
+    transform: translateX(-5%);
+    }
+    .form-brd{
+            border-radius: 20px;
+            flex-basis: 90%;
+            
+    }
+    .inp{
+        padding: 6px;
+        font-size: 8px;
+    }
+    .btn-submit{
+        padding: 6px;
+    }
+}
+.pwdsts{
+    flex-basis: 90%;
+    font-weight: 500;
+    background-color:var(--bg-color);
+    border:2px solid whitesmoke;
+    border-radius: 10px;
+    padding:4px;
+    font-weight: 600;
+    color:black;
+    text-align: center;
+}
+.chkbtndiv{
+    margin: 5px;
+}
+#checkoutbtn{
+    border:1px solid var(--success-color);
+    background-color: var(--success-color);
+    color:white;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.chkpage{
+    border:18px;
+    padding:10px;
+}
+.chkpage ul li{
+    list-style-type: none;
+}
+.chkpage .billno{
+     font-weight: 600;
+    color:var(--success-color);
+    font-size: 1.5rem;
+    margin:4px;
+
+}
+.customer{
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 2rem;
+    color:var(--success-color);
+     font-weight: 500;
+    margin:4px;
+}
+.chkheading{
+    padding:8px;
+    font-size:14px;
+    font-family: "Josefin Sans",sans-serif;
+    color: black;
+    list-style-type:none ;
+    border-top: 1px solid var(--checkout-btn);
+    border-bottom:  1px solid var(--checkout-btn);
+}
+.chkvalue{
+    padding:8px;
+    font-size:14px;
+    color: black;
+    list-style-type:none;
+}
+ .chkpage .print-btn{
+    border:1px solid var(--success-color);
+    background-color: var(--success-color);
+    margin: 10px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
